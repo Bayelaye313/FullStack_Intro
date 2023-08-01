@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Accueil</title>
+      <!-- font-style et icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets\css\style.css">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+      <title>tp-bootsrap</title>
+  </head>
+      <!-- contenu du site -->
+  <body>
+    <!-- Barre de Navigation-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container " >
+          <a class="navbar-brand" href="#"><img src="img\logo.png" alt="notre logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="a_propos.html">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="portfolio.html" >Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#footer" >Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+   </nav>
+   <!--End  Barre de Navigation-->  
+
+    <!-- section banniere-->
+    <section class="container-fluid banner d-flex py-5">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="col-sm-6 p-5">
+            <h1 class="fs-1 fw-bold"> Robbie Lens Photographie</h1>
+            <p class="fs-5">
+             Où <span>professionalisme</span> s’allie avec <span>passion</span>. Depuis plus de 5 ans maintenant,
+              j’exerce mon métier avec la passion qui m’anime : capturer l’essence de chaque instant.
+            </p>
+            <a class="btn btn-primary" href="#projet" role="button">Un Projet? Ecrivez-moi</a>
+          </div>
+          <div class="col-lg-6 p-5">
+            <img src="img\robbie-lens.png" alt="photo de robbie-lens" class="img-fluid">
+          </div>
+        </div>
+    </section>
+    <!--End section banniere-->
+    <!-- section projets-->
+    <section class="container-fluid projets py-5">
+      <h2 class="text-center fw-bold">Mon Dernier projet</h2>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="img\accueil\element-1.png" class="img-fluid" alt="Photo 1">
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="img\accueil\element-2.png" class="img-fluid" alt="Photo 2">
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="img\accueil\element-3.png" class="img-fluid" alt="Photo 3">
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4 text-center">
+            <img src="img\accueil\element-4.png" class="img-fluid" alt="Photo 4">
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="img\accueil\element-5.png" class="img-fluid" alt="Photo 5">
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="img\accueil\element-6.png" class="img-fluid" alt="Photo 6">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End section projet-->
+
+    <!--footer et contacts-->
+    <footer class="container-fluid " id="footer">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1 py-3 fw-bold">Parlons de votre Projet:</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" id="projet">
+                <div class="well well-sm">
+                    <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name:</label>
+                                <div class="input-group">
+                                  <span class="input-group-text" id="basic-addon1">@</span>
+                                  <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="email">
+                                  Email Address
+                              </label>
+                              <div class="input-group">
+                                  <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope"></i></span>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                              </div>
+                          </div>                          
+                            <div class="form-group">
+                                <label for="subject">
+                                    Subject</label>
+                                <select id="subject" name="subject" class="form-select" required="required">
+                                    <option value="na" selected="" disabled>Objet de votre message:</option>
+                                    <option value="service">Service Client</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="product">Partanariat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="6" cols="25" required="required"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success pull-left mt-3" id="btnContactUs">
+                                Envoyer</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form>
+                <legend><span class="fas fa-globe"></span> Notre Bureau:</legend>
+                <address>
+                    <a href="www.twitter.com"><i class="fa-brands fa-twitter fs-3 me-3"></i></a>
+                    <a href="www.instagram.com"><i class="fa-brands fa-instagram fs-3 me-3" style="color: #dfd7d9;"></i></a>
+                    <a href="www.facebook.com"><i class="fa-brands fa-facebook fs-3 me-3"></i></a><br>
+                    Dakar, amitié 3<br>
+                    route ecole normale <br>
+                    <abbr title="Phone">
+                        P:</abbr>
+                    (+221) 78-431-45-01
+                </address>
+                <address>
+                    <strong>Abdoulaye Gueye</strong><br>
+                    <a href="mailto:#" class="text-light ">bayelaye0510@gmail.com</a>
+                </address>
+                </form>
+            </div>
+        </div>
+    </footer> 
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="assets/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>

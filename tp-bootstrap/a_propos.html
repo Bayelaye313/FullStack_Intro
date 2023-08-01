@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>A propos</title>
+      <!-- font-style et icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets\css\style.css">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+      <title>tp-bootsrap</title>
+  </head>
+      <!-- contenu du site -->
+<body>
+            <!-- Barre de Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container " >
+            <a class="navbar-brand" href="#"><img src="img\logo.png" alt="notre logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="a_propos.html">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="portfolio.html" >Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#footer" >Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!--End  Barre de Navigation-->  
+
+        <!--section About--> 
+        <section class="container-fluid about py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <div class="card mx-auto w-75 border-bottom " style=" background-color: #1f2039;  ">
+                        <h1 class="card-title  fw-bold">À  Propos</h1>
+                        <p class="card-body">
+                            Photographe depuis plus de 5 ans, je réalise des reportages aux photos dynamiques et pertinentes pour vos projets de communication. Créativité, qualité, et sérénité pour vous! Je gère tout, depuis la direction artistique, 
+                            la réalisation du reportage jusqu’à la livraison de vos photos retouchées, prêtes à l’emploi.
+                        </p>
+                        <h2 class="card-subtitle  m-3 fs-1 fw-bold">SERVICES</h2>
+                            <ul class=" text-start">
+                                <li>Portrait seul ou à plusieurs</li>
+                                <li>Shooting mode</li>
+                                <li>Retouches sur mesure</li>
+                                <li>Développement</li>
+                            </ul>                          
+                    </div> 
+                    <a class="btn btn-outline-light mt-3 " href="portfolio.html" role="button">Voir mon Portfolio</a>
+                </div>
+            </div>
+        </section>    
+        
+        <!--section Tarifs-->
+        <section  class="container-fluid tarifs">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <table class="table table-sm align-middle mt-5 bg-light table-hover table-bordered text-center">
+                        <thead>
+                            <th scope="col">Désignation</th>
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Prix</th>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td class="p-5">Retouches photo studio professionnel</td>
+                                <td class="p-5">x800 photos</td>
+                                <td class="p-5">3200$/800 photos</td>
+                            </tr>
+                            <tr >
+                                <td class="p-5">Assistant photo lumière professionnel</td>
+                                <td class="p-5">x2 sets studio</td>
+                                <td class="p-5">1500$/journée</td>
+                            </tr>
+                        </tbody>
+            
+                    </table>            
+                </div>
+            </div><hr>   
+        </section>
+
+        <!--footer et contacts-->
+    <footer class="container-fluid py-5" id="footer" >
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-lg-12">
+                  <h1 class="h1 py-3 fw-bold">Parlons de votre Projet:</h1>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8" id="projet">
+                  <div class="well well-sm">
+                      <form>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="name">
+                                      Name:</label>
+                                  <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />  
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="email">
+                                    Email Address
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                </div>
+                            </div>                          
+                              <div class="form-group">
+                                  <label for="subject">
+                                      Subject</label>
+                                  <select id="subject" name="subject" class="form-select" required="required">
+                                      <option value="na" selected="" disabled>Objet de votre message:</option>
+                                      <option value="service">Service Client</option>
+                                      <option value="suggestions">Suggestions</option>
+                                      <option value="product">Partanariat</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="name">
+                                      Message</label>
+                                  <textarea name="message" id="message" class="form-control" rows="6" cols="25" required="required"
+                                      placeholder="Message"></textarea>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <button type="submit" class="btn btn-success pull-left mt-3" id="btnContactUs">
+                                  Envoyer</button>
+                          </div>
+                      </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <form>
+                  <legend><span class="fas fa-globe"></span> Notre Bureau:</legend>
+                  <address>
+                      <a href="www.twitter.com"><i class="fa-brands fa-twitter fs-3 me-3"></i></a>
+                      <a href="www.instagram.com"><i class="fa-brands fa-instagram fs-3 me-3" style="color: #b92346;"></i></a>
+                      <a href="www.facebook.com"><i class="fa-brands fa-facebook fs-3 me-3"></i></a><br>
+                      Dakar, amitié 3<br>
+                      route ecole normale <br>
+                      <abbr title="Phone">
+                          P:</abbr>
+                      (+221) 78-431-45-01
+                  </address>
+                  <address>
+                      <strong>Abdoulaye Gueye</strong><br>
+                      <a href="mailto:#" class="text-light ">bayelaye0510@gmail.com</a>
+                  </address>
+                  </form>
+              </div>
+          </div>
+      </footer> 
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script src="assets/js/bootstrap.bundle.min.js" ></script>
+  
+</body>
+</html>

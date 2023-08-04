@@ -45,8 +45,31 @@
         <!--section carousel avec slide -->
     <section class="container-fluid " style="background-color: antiquewhite">
         <!--un header-->
-            <div class="container-fluid " style="background-color: #1f2039;">
+            <div class="container-fluid d-flex justify-content-between " style="background-color: #1f2039;">
                 <h1 class="fw-bolder p-5" >PORTFOLIO</h1>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  help
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal help</h5>
+                        <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Bienvenu(e) dans notre site, si vous avez besoin d'aide veillez nous contacter sur nos adresses en bas de page</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         <!--carousel muti-item avec des cards photos voyages-->
         <div class="container py-5" style="color: black; ">

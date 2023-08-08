@@ -1,0 +1,177 @@
+*{
+    margin: 10px;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*partie lien parent*/
+nav{
+    width: auto;
+    border-bottom: 50px;
+}
+/*enlever les puces*/
+nav ul{
+list-style-type: none;
+}
+
+/*display des liens*/
+nav a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 12px;
+}
+
+/*flotter notre liste*/
+nav ul li {
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 20%;
+
+}
+
+
+/*gerer le hover*/
+nav a:hover{
+color: crimson;
+background-color: white;
+border-bottom: 2px solid orange;
+padding: 10px;
+}
+
+
+/*gestion du clear-fix*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*mettre l'icone*/
+.menu_deroulant::after{
+    content: "▼";
+    font-size: 10px;
+}
+
+
+/*partie sous lien*/
+.sous {
+display: none;
+box-shadow: 0px 1px 2px #CCC;
+background-color: white;
+position: absolute;
+width: 100%;
+z-index: 1000;
+}
+
+
+/*affichage des sous quand on hover les liens parents*/
+nav> ul li:hover .sous{
+    display: block;
+}
+
+
+/*empecher les sous lien de flotter*/
+.sous li{
+    float: none;
+    width: auto;
+    
+}
+
+
+/*style taille des sous liens*/
+.sous a{
+padding: 10px;
+}
+
+/* sous liens surf*/
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.conteneur{
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color: #CCC;
+    /*pourquoi pas de transition*/
+    transition-property: background-color, width;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.conteneur:hover{
+    background-color: blueviolet;
+    width: 800px;
+}
+/*un peu d'animation*/
+.animation{
+    width: 500px;
+    margin: auto;
+    background-color: antiquewhite;
+    animation: couleur;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes couleur {
+    from{
+        background-color: antiquewhite;}
+    50%{ background-color: blueviolet;
+        width: 50%;}
+    to{ background-color: antiquewhite}  
+}
+.animation:hover{
+    animation-play-state: paused;
+}
+/*transformation pour le plaisir*/
+.transformation{
+    margin: auto;
+    width: 500px;
+    background-color: palevioletred;
+    border: 2px solid black;
+    transform-origin: 0 0;
+    transform: skewX(30deg);
+
+}
+/*tp animation */
+.d1{
+    width: 500px;
+    height: 400px;
+    margin: 50px auto;
+    border: 2px solid black;
+    box-shadow:0px 1px 2px #c90b0b ;
+    animation: anima 5s ease-in-out infinite both;
+    background-color: #570c0c
+}
+@keyframes anima {
+    from{
+        background-image:url(img/blog1.jpg);
+    }50%{
+        background-image:url(img/blog2.jpg) ;
+    }to{
+        background-image: url(img/blog3.jpg);
+    }
+    
+}
+.d1:hover, d2:hover{
+    animation-play-state: paused;
+}
+.contenu{
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 50px auto;
+    border: 3px solid black;
+}
+.d2{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    box-shadow: 0px 3px 4px orangered;
+    background-color: bisque;
+    animation: anima 10s ease-in-out infinite both;
+    background-size: cover;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+.banner, footer{
+    background-color: #1f2039;
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+  }
+h1, span{
+    color: #a5b4fc;
+    font-family: 'Lato', sans-serif;
+  }

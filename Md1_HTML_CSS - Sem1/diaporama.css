@@ -1,0 +1,65 @@
+*{
+    margin: 10px;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*tp animation 
+.d1{
+    width: 500px;
+    height: 400px;
+    margin: 50px auto;
+    border: 2px solid black;
+    box-shadow:0px 1px 2px #c90b0b ;
+    animation: anima 5s ease-in-out infinite both;
+    background-color: #570c0c;
+    background-size: contain;
+}
+@keyframes anima {
+    from{
+        background-image:url(img/blog1.jpg);
+        
+    }50%{
+        background-image:url(img/blog2.jpg) ;
+    }to{
+        background-image: url(img/blog3.jpg);
+    }
+    
+}
+.d1:hover, d2:hover{
+    animation-play-state: paused;
+}
+.contenu{
+    max-width: 500px;
+    margin: 50px auto;
+
+}
+.d2{
+    width: 100%;
+    padding-top: 67%;
+    box-shadow: 0px 3px 4px orangered;
+    background-color: bisque;
+    animation: anima 10s ease-in-out infinite both;
+    background-size: contain;
+}*/
+/*diapo avec effet de defilement*/
+.d1{
+    width: 3840px;
+    height: 720px;
+    box-shadow:0px 1px 2px #c90b0b ;
+    animation: anima 12s linear infinite;
+    background: url(img/diapo123.png);
+    background-size: contain;
+}
+.contenu1{
+    overflow: hidden;
+    margin: 50px auto;
+    max-width: 960px;
+}
+@keyframes anima {
+    0%{
+        transform: translate(0,0);
+    }100%{
+        transform: translate(-2998px,0);
+    }
+    
+}

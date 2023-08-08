@@ -1,0 +1,438 @@
+/*--------------Menu de Navigation-------------------*/
+header {
+    background-color: rgb(248, 196, 196);
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.em;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .menu li > a:hover{
+    border-bottom: 2px solid rgb(128, 6, 32);
+  }
+  
+  .submenu {
+    position: absolute;
+    background-color: #645d5d;
+    list-style: none;
+    padding: 15px;
+    display: none;
+  }
+  .menu li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .submenu li a {
+    color: white;
+  }
+  .submenu li a:hover{
+    border-bottom: 0;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    background-color: RGBa(200,200,200,0.1);
+  }
+  .registre a {
+    margin-right: 0px;
+    text-decoration: none;
+    color: #333;
+    font-weight:lighter;
+    font-size: 1.em;
+  }
+  
+  .icons a {
+    margin-left: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.em;
+  }
+  /*--------------Notre Première Section--------------------------*/
+  .fashion{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .grid_fashion{
+    width: 50%px;
+    height: auto;
+    display: grid;
+    background-color:white;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+  }
+  .womens_fashion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke ;
+    text-align: center;
+    background-color: pink;
+    background-image: url(img/pexels-godisable-jacob-949670.jpg);
+    background-size: cover;
+  }
+.fash{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+#box1{
+    background-image: url(img/bearded-young-man.jpg);
+    background-color: blue;
+}
+#box2{
+    background-image: url(img/Children-Photography-5-300x200@2x.jpg);
+    background-color: rgb(37, 80, 43);
+}
+#box3{
+    background-image: url(img/cosmetic-retouched-2-2000px.jpg);
+    background-color: rgb(2, 2, 22);
+}
+#box4{
+    background-image: url(img/téléchargement.jpg);
+    background-color: rgb(136, 21, 92);
+}
+.fashion a, .section_animation .fash a, .content a{
+  
+    color:white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline 2px brown;
+}
+h3, .content span{
+    font-family: 'Lato', sans-serif  ;
+    color: orangered ;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*----------------Section produits-----------------*/
+.nouveau_prod{
+    margin: 35px;  
+}
+.nouveau_prod nav{
+  margin-bottom: 50px;
+}
+.nouveau_prod li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    color: black;
+}
+.new{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em ;
+    font-weight: bold;
+}
+.new span, .colonne h2{
+    text-decoration: underline crimson;
+}
+.produits{
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px ;
+    gap: 15px;
+    row-gap: 80px;
+}
+.produits img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.art{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.art:hover{
+    transform: scale(1.2,1.2);
+}
+/*-----------------SEction Chloe collection-------------*/
+.section_animation{
+   position: relative;
+  width: 100%; /* Largeur souhaitée de l'image */
+  height: 400px; /* Hauteur souhaitée de l'image */
+    background-image: url(img/arturo-rey-5yP83RhaFGA-unsplash.jpg);
+    background-color: #645d5d;
+    background-size: cover;
+    background-position: center;  
+}
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.section_animation .fash {
+  animation: scroll 10s linear 10s infinite;
+  white-space: nowrap;
+  
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  
+}
+.section_animation .fash:hover {
+  animation-play-state: paused;
+}
+/*--------------------Sections des produits tendances------------------------*/
+.section {
+  display: flex;
+  margin-left: 100px;
+}
+.colonne {
+  flex: 1;
+  padding: 20px;
+}
+.image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.image img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+}
+.prix {
+  color: green;
+  font-weight: bold;
+}
+/*--------------Section promotions----------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.box {
+  flex-basis: 50%;
+  height: 400px;
+  border: 1px solid black;
+  background-color: rgb(9, 51, 37);
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+.content {
+  font-weight: bold;
+  text-align: center;
+  color: yellowgreen;
+  margin-top: 50px;
+  padding: 10px;
+}
+/*---------------------------------section icones--------------------*/
+.mes_icons{
+  display: flex;
+  margin: 50px;
+}
+.mes_icons i{
+  margin-right: 10px;
+  font-size: 2.5em;
+  color: green;
+}
+.icn{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.icn h6, p {
+  margin: 0;
+}
+/*---------------------------------la dernière section --------------------*/
+.last_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+  grid-template-rows: 300px  ;
+  gap: 0px;
+}
+.last_section img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.lien-conteneur-photo{
+position: relative;
+}
+.photo-hover{
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(245, 241, 241, 0.7) ;
+font-size: 1.5em;
+align-items: center;
+justify-content: center;
+color: white;
+
+display: none;
+}
+.lien-conteneur-photo:hover
+.photo-hover{
+display: flex;
+}
+/*---------------------------------partie footer--------------------*/
+footer{
+  margin: 50px;
+  text-align: center;
+  color: #645d5d;
+}
+.informations{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+.inf h4,a, .footer-payment{
+  margin: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: gray;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+.inf h4{
+  color: black;
+  font-size: 16px;
+}
+.footer-payment{
+  display: flex;
+  flex-direction: row;
+}
+.footer-social img{
+  width: 2.3em;
+  margin-top: 15px;
+}
+form {
+  position: relative;
+}
+
+form input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 50px;
+  font-size: 15px;
+  color: #645d5d;
+  padding: 10px;
+}
+
+form button {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  height: 100%;
+  padding: 10px;
+}
+
+.btn{
+  font-size: 14px;
+    color: #ffffff;
+    background: #7c1414;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-right: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+hr {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: rgba(139, 133, 133, 0.5);
+}
+.copyright i{
+color: red;
+}
+
+/* gestion de la responsivité*/
+@media screen and (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  .menu .submenu {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .menu li, .submenu li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .fashion{
+    display: flex;
+    flex-direction: column;
+  }
+  .section, .informations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .mes_icons{
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form button{
+    right: 0;
+  }
+
+}

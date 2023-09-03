@@ -1,15 +1,17 @@
 <?php
 session_start();
-
+// inclure notre fichier config
 require_once "connexion.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Récupération des valeurs soumises via le formulaire POST
     $username = $_POST["username"];
     $password = $_POST["password"];
-
+// faire une requete preparer avec un parametre de subtitution
     $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+    //execution de notre requete
     $stmt->execute([$username]);
-
+//rcuperation de notre requete
     $user = $stmt->fetch();
 
     if ($user && password_verify($password, $user["password"])) {

@@ -10,8 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Vérification si le nom d'utilisateur existe déjà
     $stmt_check = $pdo->prepare("SELECT id FROM users WHERE username = ?");
     $stmt_check->execute([$username]);
-
-    if ($stmt_check->rowCount() > 0) {
+    //recuperation resultat de la requete
+    $user_existant= $stmt_check->fetch();
+    if ( $user_existant) {
         $error_message = "Ce nom d'utilisateur est déjà pris. Veuillez en choisir un autre.";
     } else {
         // Insérer les données dans la base de données
